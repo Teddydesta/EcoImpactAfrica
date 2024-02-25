@@ -16,7 +16,7 @@
 
 </head>
 <body>
-    <form runat="server">
+    <form runat="server" style="margin-bottom:500px">
         <asp:ScriptManager runat="server">
             <Scripts>
                 <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
@@ -36,7 +36,7 @@
             </Scripts>
         </asp:ScriptManager>
 
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
+        <nav style="background-color:seagreen" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-b">
             <div class="container">
                 <a class="navbar-brand" runat="server" href="/">  <img src="images/Photo1.jpg" alt="" /></a>
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Toggle navigation" aria-controls="navbarSupportedContent"
@@ -45,13 +45,14 @@
                 </button>
                 <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/About">About</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/"><strong>Home </strong></a></li>
+                       
                     </ul>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
-                            <ul class="navbar-nav navbar-right">
+                            <ul class="navbar-nav navbar-right"  style="border:dashed">
+                                 <li class="nav-item"><a class="nav-link" runat="server" href="~/About">AboutUs</a></li>
+                                 <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact">Contact</a></li>
                                 <li><a runat="server" class="nav-link" href="~/Account/Register">Register</a></li>
                                 <li><a runat="server" class="nav-link" href="~/Account/Login">Log in</a></li>
                             </ul>
@@ -72,8 +73,8 @@
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
             <hr />
-            <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
+            <footer style=" margin-top:200px; margin-bottom:0">
+                <p>&copy; <%: DateTime.Now.Year %> - Carbon FootPrint Tracker Application</p>
             </footer>
         </div>
     </form>
