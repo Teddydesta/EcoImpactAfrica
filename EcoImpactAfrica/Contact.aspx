@@ -2,7 +2,7 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <main aria-labelledby="title">
-        <h2 id="title">Contact US</h2>
+        <h2 id="title" style="color:limegreen"><strong>Contact US </strong> </h2>
 <%--        <h3>Your contact page.</h3>--%>
         <address>
             One Microsoft Way<br />
@@ -14,6 +14,6 @@
         <address>
             <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
             <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-        </address>
-    </main>
+        </address >
+    </main >
 </asp:Content>
