@@ -5,10 +5,10 @@
     <main>
         <section class="row" aria-labelledby="aspnetTitle">
             <h1 id="aspnetTitle">Carbon FootPrint Tracker Application</h1>
-             <center> <p> A carbon footprint represents the annual amount of greenhouse gas emissions, 
+              <p> A carbon footprint represents the annual amount of greenhouse gas emissions, 
                 primarily carbon dioxide (CO₂), resulting from specific activities.
                 These emissions can be direct or indirect and stem from various sources, 
-                including energy use, transportation, manufacturing, and consumption of goods and services </p> </center> 
+                including energy use, transportation, manufacturing, and consumption of goods and services </p> 
             <p><a href="./Account/login.aspx" class="btn btn-primary btn-md">Login &raquo;</a></p>
         </section>
 
