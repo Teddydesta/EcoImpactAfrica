@@ -55,6 +55,8 @@
             <section id="socialLoginForm">
                 <uc:OpenAuthProviders runat="server" ID="OpenAuthLogin" />
             </section>
+           <%-- <img src="">--%>
         </div>
+        
     </main>
 </asp:Content>
