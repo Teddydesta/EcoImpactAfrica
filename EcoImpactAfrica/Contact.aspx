@@ -2,7 +2,7 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <main aria-labelledby="title">
-       <h2>Contact Us</h2>
+       <h2 style="color:limegreen"> <strong>Contact Us  </strong></h2>
        <p>Do you have questions or inquiries? Please feel free to contact us using the information below:</p>
         <div class="contact-info">
 <h3>Address</h3>
