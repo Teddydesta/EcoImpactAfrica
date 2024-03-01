@@ -3,7 +3,7 @@
 <%@ Register Src="~/Account/OpenAuthProviders.ascx" TagPrefix="uc" TagName="OpenAuthProviders" %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
-    <main aria-labelledby="title">
+    <main aria-labelledby="title" class="row" >
         <h2 id="title"><%: Title %>.</h2>
         <div class="col-md-8">
             <section id="loginForm">
@@ -51,12 +51,17 @@
             </section>
         </div>
 
-        <div class="col-md-4">
+        <div class="row">
             <section id="socialLoginForm">
                 <uc:OpenAuthProviders runat="server" ID="OpenAuthLogin" />
             </section>
-           <%-- <img src="">--%>
+            <section class="col-md-4">
+                <img src=" login.png" style="max-width: 100%;height: 400px;"/>
+
+            </section>
+
         </div>
+
         
     </main>
 </asp:Content>
