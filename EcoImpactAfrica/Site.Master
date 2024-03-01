@@ -55,6 +55,7 @@
                                  <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact" style="color:white;">Contact</a></li>
                                 <li><a runat="server" class="nav-link" href="~/Account/Register" style="color:white">Register</a></li>
                                 <li><a runat="server" class="nav-link" href="~/Account/Login" style="color:white">Log in</a></li>
+                                 <li><a runat="server" class="nav-link" href="~/data_entry_page.aspx" style="color:white">Your Data</a></li>
                             </ul>
                         </AnonymousTemplate>
                         <LoggedInTemplate>
