@@ -3,10 +3,22 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <main aria-labelledby="title">
        <h2 style="color:limegreen"> <strong>Contact Us  </strong></h2>
-       <p>Do you have questions or inquiries? Please feel free to contact us using the information below:</p>
+       <h3>We would love to hear from you if you</h3>
+        <p>
+     Need help with compliance  <br>
+    Are keen to develop strong sustainability credentials for your organisation    <br>
+    Want to take your environmental programme to the next level<br>
+    Are looking for high quality carbon offset projects to support<br>
+        </p>
         <div class="contact-info">
 <h3>Address</h3>
-<p>123 Green Street<br />Cityville, EcoLand<br />Country</p>
+<p>
+Carbon Footprint Ltd <br>
+Belvedere House <br>
+Basing View <br>
+Basingstoke <br>
+Hampshire, RG21 4HG, UK <br>
+</p>
 <h3>Phone</h3>
 <p>+123-456-7890</p>
 <h3>Email</h3>
