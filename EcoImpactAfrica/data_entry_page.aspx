@@ -59,34 +59,43 @@
                                     <!-- Other form elements -->
                                 </div>
 
-                                <h3>Electricity Consumption</h3>
+                                <div id="electricitySection" style="display: none;">
+                                    <h3>Electricity Consumption</h3>
 
-                                <div class="row">
-                                    <div class="col-md-4 col-md-offset-1">
-                                        <div class="form-group">
-                                            <asp:Label runat="server" AssociatedControlID="DropDownList2"><b>Energy Source</b></asp:Label><br />
-                                            <asp:DropDownList ID="DropDownList2" CssClass="form-control input-sm" runat="server">
-                                                <asp:ListItem Text="Select" />
-                                                <asp:ListItem Text="Grid" />
-                                                <asp:ListItem Text="Solar" />
-                                                <asp:ListItem Text="Wind" />
-                                                <asp:ListItem Text="Electric" />
-                                            </asp:DropDownList>
+                                    <div class="row">
+                                        <div class="col-md-4 col-md-offset-1">
+                                            <div class="form-group">
+                                                <asp:Label runat="server" AssociatedControlID="DropDownList2"><b>Energy Source</b></asp:Label><br />
+                                                <asp:DropDownList ID="DropDownList2" CssClass="form-control input-sm" runat="server">
+                                                    <asp:ListItem Text="Select" />
+                                                    <asp:ListItem Text="Grid" />
+                                                    <asp:ListItem Text="Solar" />
+                                                    <asp:ListItem Text="Wind" />
+                                                    <asp:ListItem Text="Electric" />
+                                                </asp:DropDownList>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-4 col-md-offset-1">
-                                        <div class="form-group">
-                                            <asp:Label runat="server" AssociatedControlID="TextBox1"><b>Electricity Usage</b></asp:Label><br />
-                                            <asp:TextBox runat="server" required="required" TextMode="Number" Enabled="True" name="BrandName" ID="TextBox1" class="form-control input-sm" placeholder="kwh "></asp:TextBox>
+                                        <div class="col-md-4 col-md-offset-1">
+                                            <div class="form-group">
+                                                <asp:Label runat="server" AssociatedControlID="TextBox1"><b>Electricity Usage</b></asp:Label><br />
+                                                <asp:TextBox runat="server" required="required" TextMode="Number" Enabled="True" name="BrandName" ID="TextBox1" class="form-control input-sm" placeholder="kwh "></asp:TextBox>
+                                            </div>
                                         </div>
+                                        <!-- Other form elements -->
                                     </div>
-                                    <!-- Other form elements -->
                                 </div>
 
                                 <div class="row">
                                     <div class="col-md-10 col-md-offset-1">
                                         <div class="form-group text-center">
-                                            <asp:Button Text="Submit" ID="btnsave" OnClick="btnsave_Click" CssClass="btn btn-primary btn-lg" Width="350px" runat="server" />
+                                            <asp:Button Text="Next" ID="btnNext" OnClientClick="showElectricitySection(); return false;" CssClass="btn btn-primary btn-lg" Width="350px" runat="server" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="form-group text-center">
+                                            <asp:Button Text="Submit" ID="btnsave" OnClick="btnsave_Click" CssClass="btn btn-success btn-lg" Width="350px" runat="server" Style="display: none;" />
                                         </div>
                                     </div>
                                 </div>
@@ -97,4 +106,13 @@
             </section>
         </section>
     </div>
+
+    <script type="text/javascript">
+        function showElectricitySection() {
+            document.getElementById('electricitySection').style.display = 'block';
+            document.getElementById('btnNext').style.display = 'none';  // Hide the "Next" button
+            document.getElementById('btnsave').style.display = 'block'; // Show the "Submit" button
+        }
+</script>
+
 </asp:Content>
