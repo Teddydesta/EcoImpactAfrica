@@ -5,10 +5,11 @@
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
     <style>
         body {
-            background-image: url('');
+            background-image: url('https://media.istockphoto.com/id/1173215102/photo/abstract-volcanic-landscape-in-the-highlands-of-iceland.webp?b=1&s=170667a&w=0&k=20&c=zbxWIoAHqDL_60ZQ_O8w20qmyOehhtHzJu14D13-t7U=');
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
+            margin-bottom:0
         }
 
         main {
