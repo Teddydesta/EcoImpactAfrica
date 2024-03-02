@@ -15,12 +15,21 @@ namespace EcoImpactAfrica
     {
 
         /// <summary>
-        /// gvDataHistory control.
+        /// gvTransportEmission control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvDataHistory;
+        protected global::System.Web.UI.WebControls.GridView gvTransportEmission;
+
+        /// <summary>
+        /// gvElectricityConsumption control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gvElectricityConsumption;
     }
 }
