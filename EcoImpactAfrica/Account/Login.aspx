@@ -3,65 +3,101 @@
 <%@ Register Src="~/Account/OpenAuthProviders.ascx" TagPrefix="uc" TagName="OpenAuthProviders" %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
-    <main aria-labelledby="title" class="row" >
-        <h2 id="title"><%: Title %>.</h2>
-        <div class="col-md-8">
-            <section id="loginForm">
-                <div class="row">
-                    <h4>Use your credential account to log In</h4>
-                    <hr />
-                    <asp:PlaceHolder runat="server" ID="ErrorMessage" Visible="false">
-                        <p class="text-danger">
-                            <asp:Literal runat="server" ID="FailureText" />
-                        </p>
-                    </asp:PlaceHolder>
-                    <div class="row">
-                        <asp:Label runat="server" AssociatedControlID="Email" CssClass="col-md-2 col-form-label">Email</asp:Label>
-                        <div class="col-md-10">
-                            <asp:TextBox runat="server" ID="Email" CssClass="form-control" TextMode="Email" />
-                            <asp:RequiredFieldValidator runat="server" ControlToValidate="Email"
-                                CssClass="text-danger" ErrorMessage="The email field is required." />
-                        </div>
-                    </div>
-                    <div class="row">
-                        <asp:Label runat="server" AssociatedControlID="Password" CssClass="col-md-2 col-form-label">Password</asp:Label>
-                        <div class="col-md-10">
-                            <asp:TextBox runat="server" ID="Password" TextMode="Password" CssClass="form-control" />
-                            <asp:RequiredFieldValidator runat="server" ControlToValidate="Password" CssClass="text-danger" ErrorMessage="The password field is required." />
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="offset-md-2 col-md-10">
-                            <div class="checkbox">
-                                <asp:CheckBox runat="server" ID="RememberMe" />
-                                <asp:Label runat="server" AssociatedControlID="RememberMe">Remember me?</asp:Label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-offset-md-2 col-md-10" >
-                            <asp:Button runat="server" OnClick="LogIn" style="background-color:limegreen" Text="Log in" CssClass="btn btn-outline-dark" />
-                        </div>
+    <style>
+        body {
+            background-image: url('');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        main {
+            padding: 50px;
+        }
+
+        #loginForm {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        #loginForm h4 {
+            text-align: center;
+            color: darkgreen;
+            margin-bottom: 20px;
+        }
+
+        .form-control {
+            margin-bottom: 15px;
+        }
+
+        .checkbox {
+            margin-top: 10px;
+        }
+
+        #RememberMe {
+            margin-right: 10px;
+        }
+
+        #LogInBtn {
+            background-color: darkgreen;
+            width: 100%;
+            padding: 10px;
+        }
+
+        #RegisterLink {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+            color: darkgreen;
+        }
+
+        #socialLoginForm {
+            margin-top: 20px;
+        }
+    </style>
+
+    <main aria-labelledby="title" class="row">
+        <div class="col-md-8 offset-md-2" id="loginForm">
+            <h4>WELCOME BACK</h4>
+            <asp:PlaceHolder runat="server" ID="ErrorMessage" Visible="false">
+                <p class="text-danger">
+                    <asp:Literal runat="server" ID="FailureText" />
+                </p>
+            </asp:PlaceHolder>
+            <div class="row">
+                <div class="col-md-10">
+                    <asp:TextBox runat="server" ID="Email" CssClass="form-control input-sm" TextMode="Email" placeholder="Email" />
+                    <asp:RequiredFieldValidator runat="server" ControlToValidate="Email" CssClass="text-danger" ErrorMessage="The email field is required." />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10">
+                    <asp:TextBox runat="server" ID="Password" TextMode="Password" CssClass="form-control" placeholder="Password" />
+                    <asp:RequiredFieldValidator runat="server" ControlToValidate="Password" CssClass="text-danger" ErrorMessage="The password field is required." />
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="offset-md-2 col-md-10">
+                    <div class="checkbox">
+                        <asp:CheckBox runat="server" ID="RememberMe" />
+                        <asp:Label runat="server" AssociatedControlID="RememberMe">Remember me?</asp:Label>
                     </div>
                 </div>
-                <p>
-                    <asp:HyperLink runat="server" ID="RegisterHyperLink" ViewStateMode="Disabled">Register as a new user</asp:HyperLink>
-                
-
-            </section>
+            </div>
+            <div class="row">
+                <div class="col-md-10">
+                    <asp:Button runat="server" OnClick="LogIn" Text="LOG IN" CssClass="btn btn-primary btn-lg" ID="LogInBtn" />
+                </div>
+            </div>
+            <p>
+                <asp:HyperLink runat="server" ID="RegisterHyperLink" ViewStateMode="Disabled" ForeColor="darkgreen">Register as a new user</asp:HyperLink>
+            </p>
         </div>
 
-        <div class="row">
-            <section id="socialLoginForm">
-                <uc:OpenAuthProviders runat="server" ID="OpenAuthLogin" />
-            </section>
-            <section class="col-md-4">
-                <img src=" login.png" style="max-width: 100%;height: 400px;"/>
-
-            </section>
-
+        <div class="col-md-4 offset-md-2" id="socialLoginForm">
+            <uc:OpenAuthProviders runat="server" ID="OpenAuthLogin" />
         </div>
-
-        
     </main>
 </asp:Content>
