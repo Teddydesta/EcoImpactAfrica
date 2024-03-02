@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace EcoImpactAfrica {
-    
-    
-    public partial class SiteMaster {
-        
+namespace EcoImpactAfrica
+{
+
+
+    public partial class SiteMaster
+    {
+
         /// <summary>
         /// MainContent control.
         /// </summary>
