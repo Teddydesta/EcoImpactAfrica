@@ -23,6 +23,19 @@ namespace EcoImpactAfrica
 
                 gvTransportEmission.DataSource = transportData;
                 gvTransportEmission.DataBind();
+
+                // Sample data for Electricity Consumption
+                DataTable electricityData = new DataTable();
+                electricityData.Columns.Add("EntryDate", typeof(DateTime));
+                electricityData.Columns.Add("EnergySource", typeof(string));
+                electricityData.Columns.Add("ElectricityUsage", typeof(decimal));
+
+                electricityData.Rows.Add(DateTime.Now.AddDays(-2), "Refrigerator", 150);
+                electricityData.Rows.Add(DateTime.Now.AddDays(-1), "Air Conditioner", 1200);
+                electricityData.Rows.Add(DateTime.Now, "Computer", 200);
+
+                gvElectricityConsumption.DataSource = electricityData;
+                gvElectricityConsumption.DataBind();
             }
         }
 

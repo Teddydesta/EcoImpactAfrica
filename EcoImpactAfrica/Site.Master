@@ -78,7 +78,7 @@
                         Calculate
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" runat="server" href="~/data_entry_page.aspx">Calculate</a>
+                        <a class="dropdown-item" runat="server" href="~/data_entry_page.aspx">Add Data</a>
                         <a class="dropdown-item" runat="server" href="~/view_history.aspx">View History</a>
                     </div>
                 </li>
