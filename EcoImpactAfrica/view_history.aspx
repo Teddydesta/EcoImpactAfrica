@@ -21,11 +21,14 @@
                     </asp:GridView>
                 </div>
 
+
                 <!-- Electricity Consumption Section -->
-                <div id="electricityConsumptionSection"">
+                <div id="electricityConsumptionSection">
                     <h3>Electricity Consumption</h3>
                     <asp:GridView ID="gvElectricityConsumption" runat="server" AutoGenerateColumns="False" CssClass="table table-striped table-hover">
                         <Columns>
+                            <asp:BoundField DataField="EntryDate" HeaderText="Entry Date" SortExpression="EntryDate" />
+
                             <asp:BoundField DataField="EnergySource" HeaderText="Energy Source" SortExpression="EnergySource" />
                             <asp:BoundField DataField="ElectricityUsage" HeaderText="Electricity Usage (kwh)" SortExpression="ElectricityUsage" />
                         </Columns>
@@ -37,7 +40,7 @@
 
             <!-- Left side with the image -->
             <div class="col-md-3">
-                <img src="reprt.png" alt="Image" class="img-responsive" />
+                <img src="reprt.png" alt="Image"  class="img-responsive" />
             </div>
         </div>
     </div>
