@@ -1,12 +1,57 @@
 ﻿<%@ Page Title="Register" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="EcoImpactAfrica.Account.Register" %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
-    <main aria-labelledby="title">
-        <h2 id="title"><%: Title %>.</h2>
+    <style>
+        body {
+            background-color: #f4f4f4; /* Set your desired background color */
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        main {
+            max-width: 600px; /* Set your desired maximum width */
+            margin: 20px auto; /* Center the content horizontally and add margin-bottom */
+            padding: 30px; /* Add padding for better appearance */
+            background-color: #fff; /* Set your desired content background color */
+            border-radius: 10px; /* Add border-radius for rounded corners */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+        }
+
+        h4 {
+            color: #333; /* Set your desired text color */
+        }
+
+        .row {
+            margin-bottom: 15px; /* Add margin-bottom to each row for spacing */
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        .btn-outline-dark {
+            background-color: #343a40;
+            color: #fff;
+        }
+
+        .btn-outline-dark:hover {
+            background-color: #292e33;
+        }
+
+        .text-danger {
+            color: #dc3545;
+        }
+    </style>
+
+    <main aria-labelledby="title" style="margin-top:130px; margin-bottom:60px">
         <p class="text-danger">
             <asp:Literal runat="server" ID="ErrorMessage" />
         </p>
-        <h4>Create a new account</h4>
+        <center><h4>Create a new account</h4> </center>
         <hr />
         <asp:ValidationSummary runat="server" CssClass="text-danger" />
         <div class="row">
