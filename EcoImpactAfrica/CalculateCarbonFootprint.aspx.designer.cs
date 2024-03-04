@@ -24,6 +24,15 @@ namespace EcoImpactAfrica
         protected global::System.Web.UI.WebControls.TextBox MilesDriven;
 
         /// <summary>
+        /// EnergyConsumption control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox EnergyConsumption;
+
+        /// <summary>
         /// ResultMessage control.
         /// </summary>
         /// <remarks>

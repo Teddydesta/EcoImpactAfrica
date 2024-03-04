@@ -88,14 +88,14 @@
                                 <div class="row">
                                     <div class="col-md-10 col-md-offset-1">
                                         <div class="form-group text-center">
-                                            <asp:Button Text="Next" ID="btnNext" OnClientClick="showElectricitySection() && btnsave; return false;" CssClass="btn btn-primary btn-lg" Width="350px" runat="server" />
+                                            <asp:Button Text="Next" ID="btnNext" OnClientClick="showElectricitySection(); return false;" CssClass="btn btn-primary btn-lg" Width="100px" runat="server"  />
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-10 col-md-offset-1">
                                         <div class="form-group text-center">
-                                            <asp:Button Text="Submit" ID="btnsave" OnClick="btnsave_Click" CssClass="btn btn-success btn-lg" Width="350px" runat="server" Style="display: none;" />
+                                            <asp:Button Text="Submit" ID="btnsave" OnClick="btnsave_Click" CssClass="btn btn-success btn-lg" Width="350px" runat="server" Style="display: block;" />
                                         </div>
                                     </div>
                                 </div>

@@ -3,13 +3,30 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <main class="container mt-5">
         <style>
-            h2.text-success {
-                color: rgba(40, 167, 69, 0.7); /* Adjust the alpha value as needed for transparency */
+                  h1.text-success {
+               /* color: rgba(33, 150, 243, 0.8);*/ /* Updated color (blue) and alpha value */
+                animation: fadeInUp 1s ease-out;
+            }
+
+            h2.text-success, h1.text-success {
+                /*color: rgba(33, 150, 243, 0.8);*/
+                animation: fadeInUp 1s ease-out;
+            }
+
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
             }
         </style>
         <section class="row text-center">
             <div class="col-md-12">
-                <h1 class="display-4 text-success">Explore Your Carbon Footprint</h1>
+                <h1 class="display-4 text-success" style="color:darkslategray">Explore Your Carbon Footprint</h1>
                 <p class="lead text-muted">
                     Discover the environmental impact of your daily activities and find ways to reduce your carbon footprint.
                 </p>
