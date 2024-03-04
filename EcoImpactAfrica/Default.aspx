@@ -2,6 +2,11 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <main class="container mt-5">
+        <style>
+            h2.text-success {
+                color: rgba(40, 167, 69, 0.7); /* Adjust the alpha value as needed for transparency */
+            }
+        </style>
         <section class="row text-center">
             <div class="col-md-12">
                 <h1 class="display-4 text-success">Explore Your Carbon Footprint</h1>
@@ -16,7 +21,7 @@
                 <img src="back_img.png" class="img-fluid rounded" alt="Carbon Footprint">
             </div>
             <div class="col-md-6">
-                <h2 class="mb-4 text-success">What is a Carbon Footprint?</h2>
+                <h2 class="mb-4 text-success" style="color: rgba(40, 167, 69, 0.7);">What is a Carbon Footprint?</h2>
                 <p class="text-muted">
                     A carbon footprint represents the total amount of greenhouse gases, specifically carbon dioxide, that are emitted directly or indirectly by an individual, organization, event, or product throughout its lifecycle.
                 </p>
@@ -52,7 +57,7 @@
 
         <section class="row mt-5">
             <div class="col-md-12 text-center">
-                <a href="data_entry_page.aspx" class="btn btn-lg btn-success">Calculate Your Footprint</a>
+                <a href="CalculateCarbonFootprint.aspx" class="btn btn-lg btn-success">Calculate Your Footprint</a>
             </div>
         </section>
 

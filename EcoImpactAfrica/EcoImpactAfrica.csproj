@@ -168,6 +168,7 @@
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="backgroung-image.png" />
     <Content Include="back_img.png" />
+    <Content Include="CalculateCarbonFootprint.aspx" />
     <Content Include="carbon logo.png" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
@@ -351,6 +352,13 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="CalculateCarbonFootprint.aspx.cs">
+      <DependentUpon>CalculateCarbonFootprint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CalculateCarbonFootprint.aspx.designer.cs">
+      <DependentUpon>CalculateCarbonFootprint.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

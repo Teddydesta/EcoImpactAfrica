@@ -80,6 +80,7 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" runat="server" href="~/data_entry_page.aspx">Add Data</a>
                         <a class="dropdown-item" runat="server" href="~/view_history.aspx">View History</a>
+                        <a class="dropdown-item" runat="server" href="~/CalculateCarbonFootprint.aspx">Calculate FootPrint</a>
                     </div>
                 </li>
                  <li class="nav-item">
