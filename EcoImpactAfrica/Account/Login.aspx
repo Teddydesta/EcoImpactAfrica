@@ -14,11 +14,12 @@
 
         main {
             padding: 50px;
+            
         }
 
         #loginForm {
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 30px;
+background-color: white;
+padding: 30px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
@@ -59,7 +60,7 @@
         }
     </style>
 
-    <main aria-labelledby="title" class="row">
+    <main aria-labelledby="title" class="row" style="margin-bottom:40px">
         <div class="col-md-8 offset-md-2" id="loginForm">
             <h4>WELCOME BACK</h4>
             <asp:PlaceHolder runat="server" ID="ErrorMessage" Visible="false">

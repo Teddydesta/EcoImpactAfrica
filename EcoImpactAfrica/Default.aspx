@@ -16,7 +16,7 @@
                 <img src="back_img.png" class="img-fluid rounded" alt="Carbon Footprint">
             </div>
             <div class="col-md-6">
-                <h2 class="mb-4">What is a Carbon Footprint?</h2>
+                <h2 class="mb-4 text-success">What is a Carbon Footprint?</h2>
                 <p class="text-muted">
                     A carbon footprint represents the total amount of greenhouse gases, specifically carbon dioxide, that are emitted directly or indirectly by an individual, organization, event, or product throughout its lifecycle.
                 </p>
