@@ -83,9 +83,9 @@
                         Calculate
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" runat="server" href="~/data_entry_page.aspx">Add Transport Data</a>
-                        <a class="dropdown-item" runat="server" href="~/add_electric.aspx">Add Electric Data</a>
-                        <a class="dropdown-item" runat="server" href="~/view_history.aspx">View Data History</a>
+                        <a class="dropdown-item" runat="server" href="~/data_entry_page.aspx">Calculate  Transport Emission</a>
+                        <a class="dropdown-item" runat="server" href="~/add_electric.aspx">Calculate Electric Consumption</a>
+                        <a class="dropdown-item" runat="server" href="~/view_history.aspx">View Your Data History</a>
                     </div>
                 </li>
                  <li class="nav-item">
@@ -104,7 +104,7 @@
         <!-- Footer -->
         <footer class="bg-light text-center py-3 " style="color:black">
             <div class="container">
-                <p>&copy; <%: DateTime.Now.Year %> - Carbon FootPrint Tracker Application</p>
+                <p>&copy; <%: DateTime.Now.Year %> - Carbon FootPrint Tracker App, Team Rasberry</p>
             </div>
         </footer>
     </form>

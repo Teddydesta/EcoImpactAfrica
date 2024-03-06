@@ -61,6 +61,9 @@
      <img src="transport.png" alt="Your Image Alt Text" class="img-fluid" style="width: 100%; height: 500px;"/>
  </div>
                 </div>
+                                <hr />
+<h4 class="text-success">Result:</h4>
+<asp:Literal runat="server" ID="ResultMessage" />
             </section>
         </section>
     </div>

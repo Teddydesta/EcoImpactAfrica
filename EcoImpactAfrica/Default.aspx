@@ -26,7 +26,7 @@
         </style>
         <section class="row text-center">
             <div class="col-md-12">
-                <h1 class="display-4 text-success" style="color:darkslategray">Explore Your Carbon Footprint</h1>
+                <h1 class="display-4 text-success" style="color:black !important">Explore Your Carbon Footprint</h1>
                 <p class="lead text-muted">
                     Discover the environmental impact of your daily activities and find ways to reduce your carbon footprint.
                 </p>
