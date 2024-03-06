@@ -1,4 +1,6 @@
 ﻿using System;
+using static EcoImpactAfrica.data_entry_page;
+using static EcoImpactAfrica.add_electric;
 
 namespace EcoImpactAfrica
 {
@@ -9,14 +11,15 @@ namespace EcoImpactAfrica
             if (!IsPostBack)
             {
                 // Retrieve the entry list from Session
-                var entryList = Session["EntryList"] as System.Collections.Generic.List<EntryData>;
+                var transportEntryList = Session["transportEntryList"] as System.Collections.Generic.List<TransportEntryData>;
+                var electricEntryList = Session["electricEntryList"] as System.Collections.Generic.List<ElectricEntryData>;
 
                 // Display transport emission data
-                gvTransportEmission.DataSource = entryList;
+                gvTransportEmission.DataSource = transportEntryList;
                 gvTransportEmission.DataBind();
 
                 // Display electricity consumption data
-                gvElectricityConsumption.DataSource = entryList;
+                gvElectricityConsumption.DataSource = electricEntryList;
                 gvElectricityConsumption.DataBind();
             }
         }

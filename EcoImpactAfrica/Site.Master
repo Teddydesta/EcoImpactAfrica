@@ -2,6 +2,7 @@
 
 <!DOCTYPE html>
 
+
 <html lang="en">
 <head runat="server">
     <%--toastr--%>
@@ -54,7 +55,7 @@
 
         <!-- Navigation Bar -->
         <!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg bg-success fixed-top " style="background-color:darkgreen">
+<nav class="navbar navbar-expand-lg bg-success fixed-top " style="background-color: darkslategray !important;">
     <div class="container">
         <a class="navbar-brand" runat="server" href="/">
             <img src="carbon logo.png" alt="Logo" style="max-height: 40px; border-radius:35px" />
@@ -82,9 +83,9 @@
                         Calculate
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" runat="server" href="~/data_entry_page.aspx">Add Data</a>
-                        <a class="dropdown-item" runat="server" href="~/view_history.aspx">View History</a>
-                        <a class="dropdown-item" runat="server" href="~/CalculateCarbonFootprint.aspx">Calculate FootPrint</a>
+                        <a class="dropdown-item" runat="server" href="~/data_entry_page.aspx">Add Transport Data</a>
+                        <a class="dropdown-item" runat="server" href="~/add_electric.aspx">Add Electric Data</a>
+                        <a class="dropdown-item" runat="server" href="~/view_history.aspx">View Data History</a>
                     </div>
                 </li>
                  <li class="nav-item">

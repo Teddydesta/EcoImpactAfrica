@@ -4,12 +4,12 @@
     <main class="container mt-5">
         <style>
                   h1.text-success {
-               /* color: rgba(33, 150, 243, 0.8);*/ /* Updated color (blue) and alpha value */
+               color: rgba(33, 150, 243, 0.8); /* Updated color (blue) and alpha value */
                 animation: fadeInUp 1s ease-out;
             }
 
             h2.text-success, h1.text-success {
-                /*color: rgba(33, 150, 243, 0.8);*/
+                color: rgba(33, 150, 243, 0.8);
                 animation: fadeInUp 1s ease-out;
             }
 
@@ -38,7 +38,7 @@
                 <img src="back_img.png" class="img-fluid rounded" alt="Carbon Footprint">
             </div>
             <div class="col-md-6">
-                <h2 class="mb-4 text-success" style="color: rgba(40, 167, 69, 0.7);">What is a Carbon Footprint?</h2>
+                <h2 class="mb-4 text-success" style="color: black;">What is a Carbon Footprint?</h2>
                 <p class="text-muted">
                     A carbon footprint represents the total amount of greenhouse gases, specifically carbon dioxide, that are emitted directly or indirectly by an individual, organization, event, or product throughout its lifecycle.
                 </p>

@@ -17,11 +17,13 @@
     <div style="margin-bottom: 260px;">
         <h2 class="text-success">Calculate Your Carbon Footprint</h2>
         <div>
-            <asp:Label runat="server" AssociatedControlID="MilesDriven">Miles Driven:</asp:Label>
+            <asp:Label runat="server" AssociatedControlID="MilesDriven">Distance Travelled:</asp:Label>
             <asp:TextBox runat="server" ID="MilesDriven" CssClass="form-control" />
             
-            <asp:Label runat="server" AssociatedControlID="EnergyConsumption">Energy Consumption:</asp:Label>
+            <asp:Label runat="server" AssociatedControlID="EnergyConsumption">Fuel Efficiency:</asp:Label>
             <asp:TextBox runat="server" ID="EnergyConsumption" CssClass="form-control" />
+
+            
 
             <!-- Add more input fields for other factors like transportation, employee travel, material, waste, etc. -->
 

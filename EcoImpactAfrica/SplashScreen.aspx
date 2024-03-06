@@ -23,8 +23,8 @@
         }
 
         #logo {
-            max-width: 600px; /* Adjust size as needed */
-            border-radius:30px
+            width: 800px; /* Adjust size as needed */
+            border-radius:30px;
         }
 
         #title {
