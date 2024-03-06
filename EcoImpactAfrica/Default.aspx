@@ -73,8 +73,8 @@
         </section>
 
         <section class="row mt-5">
-            <div class="col-md-12 text-center">
-                <a href="CalculateCarbonFootprint.aspx" class="btn btn-lg btn-success">Calculate Your Footprint</a>
+            <div class="col-md-12 text-center " >
+                <a href="CalculateCarbonFootprint.aspx" class="btn btn-lg btn-success" >Calculate Your Footprint</a>
             </div>
         </section>
 

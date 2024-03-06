@@ -195,7 +195,9 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="landing-img.png" />
+    <Content Include="login-bg.png" />
     <Content Include="login_background.png" />
+    <Content Include="register-bg.png" />
     <Content Include="reprt.png" />
     <Content Include="Account\Web.config" />
     <Content Include="Scripts\bootstrap.bundle.js" />

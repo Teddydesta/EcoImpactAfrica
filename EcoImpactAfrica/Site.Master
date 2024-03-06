@@ -31,11 +31,23 @@
 
         .navbar-brand img {
             max-height: 40px;
+            border-radius: 150px;
         }
 
         .navbar-nav .nav-link {
+
+            margin-right: 10px;
+            max-width: 300px;
             color: #ffffff !important;
+             border: 1px solid #28a745;
+              border-radius: 10px;
+              transition: background-color 0.3s, color 0.3s;
+              
         }
+        .navbar-nav .nav-link:hover {
+    background-color: #28a745; /* Change the background color on hover */
+    color: #ffffff; /* Change the text color on hover */
+}
 
         .container {
             margin-top: 10px;
@@ -47,6 +59,18 @@
             padding: 20px 0;
             text-align: center;
         }
+        .dropdown-menu{
+             margin-right: 10px;
+ max-width: fit-content;
+ color: #ffffff !important;
+  border: 1px solid #28a745;
+   border-radius: 10px;
+   transition: background-color 0.3s, color 0.3s;
+        }
+                .dropdown-menu .dropdown-item:hover {
+    background-color: #28a745; /* Change the background color on hover */
+    color: #ffffff; /* Change the text color on hover */
+}
     </style>
 </head>
 <body>
@@ -58,21 +82,21 @@
 <nav class="navbar navbar-expand-lg bg-success fixed-top " style="background-color: darkslategray !important;">
     <div class="container">
         <a class="navbar-brand" runat="server" href="/">
-            <img src="carbon logo.png" alt="Logo" style="max-height: 40px; border-radius:35px" />
+            <img src="carbon logo.png" alt="Logo" style="max-height: 40px; border-radius:35px; margin-left:auto" />
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" style="color:white">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" runat="server" href="~/">Home</a>
+            <ul class="navbar-nav ml-auto"  >
+                <li class="nav-item " >
+                    <a class="nav-link" runat="server" href="~/" style="margin-right: 40px; padding: 8px 40px">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" runat="server" href="~/About">About Us</a>
+                    <a class="nav-link" runat="server" href="~/About" style="margin-right: 40px; padding: 8px 40px" >About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" runat="server" href="~/Contact">Contact</a>
+                    <a class="nav-link" runat="server" href="~/Contact" style="margin-right: 40px; padding: 8px 40px">Contact</a>
                 </li>
                 <%--<li class="nav-item">
                     <a class="nav-link" runat="server" href="~/Account/Register">Register</a>
@@ -82,14 +106,14 @@
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Calculate
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="margin-right: 40px; padding: 8px 40px">
                         <a class="dropdown-item" runat="server" href="~/data_entry_page.aspx">Calculate  Transport Emission</a>
                         <a class="dropdown-item" runat="server" href="~/add_electric.aspx">Calculate Electric Consumption</a>
                         <a class="dropdown-item" runat="server" href="~/view_history.aspx">View Your Data History</a>
                     </div>
                 </li>
                  <li class="nav-item">
-     <a class="nav-link" runat="server" href="~/Account/Login">Log in</a>
+     <a class="nav-link" runat="server" href="~/Account/Login" style="margin-right: 40px; padding: 8px 40px">Log in</a>
  </li>
             </ul>
         </div>
@@ -104,7 +128,7 @@
         <!-- Footer -->
         <footer class="bg-light text-center py-3 " style="color:black">
             <div class="container">
-                <p>&copy; <%: DateTime.Now.Year %> - Carbon FootPrint Tracker App, Team Rasberry</p>
+               <p>&copy; <%: DateTime.Now.Year %> - Carbon FootPrint Tracker App, <strong> Team Rasberry </strong></p>  
             </div>
         </footer>
     </form>
