@@ -51,10 +51,10 @@
 <body>
     <form id="form1" runat="server">
         <div id="splash-screen">
-            <img id="logo" src="landing-img.png" alt="Your Logo" />
+            <img id="logo" src="back_img.png" alt="Your Logo" />
             <h1 id="title">Welcome to Your Carbon Calculator</h1>
             <p id="description">Explore your environmental impact and reduce your carbon footprint.</p>
-            <a id="cta-button" href="/">Get Started</a>
+            <a id="cta-button" href="Account/Login.aspx">Get Started</a>
         </div>
     </form>
 </body>
