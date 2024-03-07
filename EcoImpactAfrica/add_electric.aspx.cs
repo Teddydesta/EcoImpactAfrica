@@ -14,6 +14,7 @@ namespace EcoImpactAfrica
             // Get entered data
             string energySource = DropDownList2.SelectedValue;
             double electricityUsage = Convert.ToDouble(TextBox1.Text);
+
             // Create a new entry object
             ElectricEntryData entryData = new ElectricEntryData
             {

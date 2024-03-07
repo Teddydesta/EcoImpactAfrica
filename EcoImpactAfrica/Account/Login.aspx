@@ -5,7 +5,6 @@
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
     <style>
         body {
-            background-image: url('https://media.istockphoto.com/id/1173215102/photo/abstract-volcanic-landscape-in-the-highlands-of-iceland.webp?b=1&s=170667a&w=0&k=20&c=zbxWIoAHqDL_60ZQ_O8w20qmyOehhtHzJu14D13-t7U=');
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -18,16 +17,17 @@
         }
 
         #loginForm {
-background-color: white;
-padding: 30px;
+     background-color: white;
+          padding: 30px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
 
-        #loginForm h4 {
+        #loginForm h3 {
             text-align: center;
-            color: darkgreen;
-            margin-bottom: 20px;
+            color: limegreen;
+            margin-bottom: 40px;
+            
         }
 
         .form-control {
@@ -43,7 +43,7 @@ padding: 30px;
         }
 
         #LogInBtn {
-            background-color: darkgreen;
+            background-color: #2c3e50;
             width: 100%;
             padding: 10px;
         }
@@ -56,13 +56,13 @@ padding: 30px;
         }
 
         #socialLoginForm {
-            margin-top: 20px;
+            margin-top: 10px;
         }
     </style>
 
     <main aria-labelledby="title" class="row" style="margin-bottom:40px">
         <div class="col-md-8 offset-md-2" id="loginForm">
-            <h4>WELCOME BACK</h4>
+            <h3>   <strong> WELCOME BACK </strong>  </h3> 
             <asp:PlaceHolder runat="server" ID="ErrorMessage" Visible="false">
                 <p class="text-danger">
                     <asp:Literal runat="server" ID="FailureText" />
@@ -90,7 +90,7 @@ padding: 30px;
             </div>
             <div class="row">
                 <div class="col-md-10">
-                    <asp:Button runat="server" OnClick="LogIn" Text="LOG IN" CssClass="btn btn-primary btn-lg" ID="LogInBtn" />
+                    <asp:Button runat="server" OnClick="LogIn" Text="LOG IN" CssClass="btn btn-primary btn-lg" ID="LogInBtn"  style="background-color:darkslategrey"/>
                 </div>
             </div>
             <p>

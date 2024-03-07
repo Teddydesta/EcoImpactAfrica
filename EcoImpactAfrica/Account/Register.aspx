@@ -18,8 +18,10 @@
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
         }
 
-        h4 {
-            color: #333; /* Set your desired text color */
+        h3 {
+            text-align: center;
+      color: limegreen;
+       margin-bottom: 40px;
         }
 
         .row {
@@ -34,7 +36,7 @@
         }
 
         .btn-outline-dark {
-            background-color: #343a40;
+            background-color: #2c3e50;
             color: #fff;
         }
 
@@ -51,13 +53,13 @@
         <p class="text-danger">
             <asp:Literal runat="server" ID="ErrorMessage" />
         </p>
-        <center><h4>Create a new account</h4> </center>
+        <center><h3> <strong>Create a new account  </strong></h3> </center>
         <hr />
         <asp:ValidationSummary runat="server" CssClass="text-danger" />
         <div class="row">
             <asp:Label runat="server" AssociatedControlID="Email" CssClass="col-md-2 col-form-label">Email</asp:Label>
             <div class="col-md-10">
-                <asp:TextBox runat="server" ID="Email" CssClass="form-control" TextMode="Email" />
+                <asp:TextBox runat="server" ID="Email" CssClass="form-control" TextMode="Email"  />
                 <asp:RequiredFieldValidator runat="server" ControlToValidate="Email"
                     CssClass="text-danger" ErrorMessage="The email field is required." />
             </div>

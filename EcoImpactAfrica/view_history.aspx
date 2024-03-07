@@ -21,20 +21,19 @@
         }
 
         .my-table th {
-            background-color: #4CAF50; /* Green color */
+            background-color: #2c3e50; /* Green color */
             color: white;
         }
 
         .my-table tbody tr:hover {
-            background-color: #f5f5f5; /* Light gray on hover */
+            background-color: #2c3e50; 
         }
     </style>
 
     <div class="container">
         <div class="row">
-            <!-- Right side with data history content -->
             <div class="col-md-9">
-                <h2 class="text-center">Data History</h2>
+                <h2 class="text-center" style="color: limegreen"> <strong> <i>Your Data Reports </i> </strong></h2>
 
                 <!-- Transport Emission Section -->
                 <div id="transportEmissionSection">
