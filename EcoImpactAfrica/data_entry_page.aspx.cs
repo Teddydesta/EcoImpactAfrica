@@ -16,7 +16,7 @@ namespace EcoImpactAfrica
             double distanceTravelled = Convert.ToDouble(txtcell.Text);
             string fuelType = DropDownList1.SelectedValue;
             double fuelEfficiency = Convert.ToDouble(txtfuelconsumed.Text);
-
+            double transportEmission = CalculateTransportEmissions(fuelType, distanceTravelled, fuelEfficiency);
             // Create a new entry object
             TransportEntryData entryData = new TransportEntryData
             {
@@ -25,6 +25,7 @@ namespace EcoImpactAfrica
                 DistanceTravelled = distanceTravelled,
                 FuelType = fuelType,
                 fuelEfficiency = fuelEfficiency,
+                transportEmission = transportEmission,
 
             };
             // Retrieve existing entries from Session or create a new list
@@ -35,10 +36,6 @@ namespace EcoImpactAfrica
 
             // Save the updated list back to Session
             Session["transportEntryList"] = transportEntryList;
-
-
-            double transportEmission = CalculateTransportEmissions(fuelType, distanceTravelled, fuelEfficiency);
-
             // Display the result
             ResultMessage.Text = $"Your estimated carbon footprint is: {transportEmission} kg CO2e";
 
@@ -56,6 +53,8 @@ namespace EcoImpactAfrica
             public double DistanceTravelled { get; set; }
             public string FuelType { get; set; }
             public double fuelEfficiency { get; set; }
+            public double transportEmission { get; set; }
+
         }
         private double CalculateTransportEmissions(string fuelType, double distanceTravelled, double fuelEfficiency)
         {

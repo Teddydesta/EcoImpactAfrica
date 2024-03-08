@@ -40,12 +40,14 @@
                     <h3>Transport Emission</h3>
                     <asp:GridView ID="gvTransportEmission" runat="server" AutoGenerateColumns="False" CssClass="my-table">
                         <Columns>
-                            <asp:BoundField DataField="EntryDate" HeaderText="Entry Date" SortExpression="EntryDate" />
                             <asp:BoundField DataField="VehicleType" HeaderText="Vehicle Type" SortExpression="VehicleType" />
                             <asp:BoundField DataField="DistanceTravelled" HeaderText="Distance Travelled (km)" SortExpression="DistanceTravelled" />
                             <asp:BoundField DataField="FuelType" HeaderText="Fuel Type" SortExpression="FuelType" />
                             <asp:BoundField DataField="fuelEfficiency" HeaderText="Fuel Efficiency (Mile)" SortExpression="fuelEfficiency" />
-                            <asp:BoundField DataField="" HeaderText="result" SortExpression="result" />
+                            <asp:BoundField DataField="transportEmission" HeaderText="Carbon Footprint (kg CO2e)" SortExpression="transportEmission" />
+                            <asp:BoundField DataField="EntryDate" HeaderText="Entry Date" SortExpression="EntryDate" />
+
+
                         </Columns>
                     </asp:GridView>
                 </div>
@@ -55,13 +57,16 @@
                     <h3>Electricity Consumption</h3>
                     <asp:GridView ID="gvElectricityConsumption" runat="server" AutoGenerateColumns="False" CssClass="my-table">
                         <Columns>
-                            <asp:BoundField DataField="EntryDate" HeaderText="Entry Date" SortExpression="EntryDate" />
                             <asp:BoundField DataField="EnergySource" HeaderText="Energy Source" SortExpression="EnergySource" />
                             <asp:BoundField DataField="ElectricityUsage" HeaderText="Electricity Usage (kwh)" SortExpression="ElectricityUsage" />
-                            <asp:BoundField DataField="" HeaderText="result" SortExpression="result" />
-<%--                            <asp:BoundField DataField="ElectricResult" HeaderText="result" SortExpression="result" />--%>
+                           <asp:BoundField DataField="electricityEmissions" HeaderText="Carbon Footprint (kg CO2e)" SortExpression="electricityEmissions" />
+                            <%--<asp:BoundField DataField="ElectricResult" HeaderText="result" SortExpression="result" />--%>
+
+                            <asp:BoundField DataField="EntryDate" HeaderText="Entry Date" SortExpression="EntryDate" />
+
                         </Columns>
                     </asp:GridView>
+
                 </div>
 
                 <!-- Other controls or buttons if needed -->
@@ -71,6 +76,17 @@
             <div class="col-md-3">
                 <img src="reprt.png" alt="Image" class="img-responsive" />
             </div>
+           <%-- <hr />
+          <asp:Literal runat="server" ID="ResultMessage" />--%>
+                    <hr />
+         <div class="row">
+              <h5 class="text-success"> <strong>Your estimated total Carbon FootPrint is:: </strong> </h5>
+             <asp:Literal runat="server" ID="ResultMessage1" />
+             <hp class="">   kg CO2e</hp>
+         </div>
+
+             
         </div>
+          
     </div>
 </asp:Content>

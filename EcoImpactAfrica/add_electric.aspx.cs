@@ -14,13 +14,16 @@ namespace EcoImpactAfrica
             // Get entered data
             string energySource = DropDownList2.SelectedValue;
             double electricityUsage = Convert.ToDouble(TextBox1.Text);
+            double electricityEmissions = CalculateElectricityEmissions(energySource, electricityUsage);
 
             // Create a new entry object
             ElectricEntryData entryData = new ElectricEntryData
             {
                 EntryDate = DateTime.Now,
                 EnergySource = energySource,
-                ElectricityUsage = electricityUsage
+                ElectricityUsage = electricityUsage,
+                electricityEmissions = electricityEmissions
+
             };
             // Retrieve existing entries from Session or create a new list
             List<ElectricEntryData> electricEntryList = Session["electricEntryList"] as List<ElectricEntryData> ?? new List<ElectricEntryData>();
@@ -34,14 +37,11 @@ namespace EcoImpactAfrica
             //string energySource1 = DropDownList2.SelectedValue;
             //double electricityUsage1 = Convert.ToDouble(TextBox1.Text);
             // Perform computation and get the result
-            double electricityEmissions = CalculateElectricityEmissions(energySource, electricityUsage);
-
             // Display the result
             ResultMessage.Text = $"Your estimated carbon footprint is: {electricityEmissions} kg CO2e";
 
             // Clear form fields
             ClearFormFields();
-
             // Show the notification
             ScriptManager.RegisterStartupScript(this, GetType(), "showSnackbar", "showSnackbar();", true);
 
@@ -51,6 +51,8 @@ namespace EcoImpactAfrica
             public DateTime EntryDate { get; set; }
             public string EnergySource { get; set; }
             public double ElectricityUsage { get; set; }
+            public double electricityEmissions { get; set; }
+
         }
         private double CalculateElectricityEmissions(string energySource, double electricityUsage)
         {

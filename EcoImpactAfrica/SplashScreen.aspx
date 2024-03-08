@@ -9,7 +9,6 @@
              color: white;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        
         #splash-screen {
             background-image: url('login_background.png');
             background-size: cover;
@@ -21,6 +20,7 @@
             justify-content: center;
             text-align: center;
             color: darkslategray;
+
         }
 
         #logo {
