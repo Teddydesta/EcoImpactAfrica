@@ -15,11 +15,14 @@ This application will take various inputs like energy consumption, transportatio
 
 ### Technology Stack Used
 **Frontend**
+
 -    HTML
 -    CSS
 -    JavaScript
 -    BootStrap
+
 **Backend**
+
 -   C#
 -   ASP.NET Web Forms
 -   SQL Database
