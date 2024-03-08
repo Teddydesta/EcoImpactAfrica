@@ -23,14 +23,15 @@ This application will take various inputs like energy consumption, transportatio
 
 ### Technology Stack Used
 **Front-end**
-
-- HTML
-- CSS
-- JavaScript
-- BootStrap
+-    HTML
+-    CSS
+-    JavaScript
+-    BootStrap
 **Backend**
-- C#
-- APS.NET
+-   C#
+-   ASP.NET Web Forms
+-   SQL Database
+  
 ### Screenshots of Main Use Interfaces(UI) 
 ### splash Page
 ![image](https://github.com/Teddydesta/EcoImpactAfrica/assets/86881100/744fc346-ddfa-4046-a0f3-2a5a08f4dfc6)
