@@ -1,7 +1,7 @@
 ### Carbon FootPrint Tracker App
   **Main Features​**
 
--     Splash Screen
+-     Splash Page
 
 -     Login/Create Account ​ ​
 
