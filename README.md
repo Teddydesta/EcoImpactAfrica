@@ -18,3 +18,17 @@
 -     Calculate Carbon Footprint ​
 
 -     View Data Report
+
+### Technology Stack Used
+**Front-end**
+
+- HTML
+- CSS
+- JavaScript
+- BootStrap
+**Backend**
+- C#
+- APS.NET
+
+
+
