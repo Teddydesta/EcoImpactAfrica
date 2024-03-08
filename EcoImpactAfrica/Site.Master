@@ -82,7 +82,7 @@
 <nav class="navbar navbar-expand-lg bg-success fixed-top " style="background-color: #2c3e50 !important;">
     <div class="container">
         <a class="navbar-brand" runat="server" href="/">
-            <img src="carbon logo.png" alt="Logo" style="max-height: 40px; border-radius:35px; margin-left:auto" />
+            <img src="carbon logo.png" alt="Logo" style="max-height: 40px; border-radius:35px; margin-left:auto; color: #2c3e50 !important"  />
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" style="color:white; background-color: white; padding: 10px">
         <span class="navbar-toggler-icon" style="color: white !important; margin-bottom: 10px"></span>
@@ -129,7 +129,7 @@
         <!-- Footer -->
         <footer class="bg-light text-center py-3 " style="color:black">
             <div class="container">
-               <p>&copy; <%: DateTime.Now.Year %> - Carbon FootPrint Tracker App, <strong> Team Rasberry </strong></p>  
+               <p>&copy; <%: DateTime.Now.Year %> - Carbon FootPrint Tracker App, <strong> Team Raspberry </strong></p>  
             </div>
         </footer>
     </form>

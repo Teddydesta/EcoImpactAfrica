@@ -45,6 +45,7 @@
                             <asp:BoundField DataField="DistanceTravelled" HeaderText="Distance Travelled (km)" SortExpression="DistanceTravelled" />
                             <asp:BoundField DataField="FuelType" HeaderText="Fuel Type" SortExpression="FuelType" />
                             <asp:BoundField DataField="fuelEfficiency" HeaderText="Fuel Efficiency (Mile)" SortExpression="fuelEfficiency" />
+                            <asp:BoundField DataField="" HeaderText="result" SortExpression="result" />
                         </Columns>
                     </asp:GridView>
                 </div>
@@ -57,6 +58,8 @@
                             <asp:BoundField DataField="EntryDate" HeaderText="Entry Date" SortExpression="EntryDate" />
                             <asp:BoundField DataField="EnergySource" HeaderText="Energy Source" SortExpression="EnergySource" />
                             <asp:BoundField DataField="ElectricityUsage" HeaderText="Electricity Usage (kwh)" SortExpression="ElectricityUsage" />
+                            <asp:BoundField DataField="" HeaderText="result" SortExpression="result" />
+<%--                            <asp:BoundField DataField="ElectricResult" HeaderText="result" SortExpression="result" />--%>
                         </Columns>
                     </asp:GridView>
                 </div>

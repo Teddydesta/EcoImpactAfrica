@@ -8,7 +8,7 @@
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-
+        
         #splash-screen {
             /*background-image: url('splash-bg.png');*/ /* Replace with your image path */
             background-size: cover;

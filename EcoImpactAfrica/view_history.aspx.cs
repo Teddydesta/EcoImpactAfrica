@@ -18,10 +18,13 @@ namespace EcoImpactAfrica
                 gvTransportEmission.DataSource = transportEntryList;
                 gvTransportEmission.DataBind();
 
+
                 // Display electricity consumption data
                 gvElectricityConsumption.DataSource = electricEntryList;
                 gvElectricityConsumption.DataBind();
             }
+
+
         }
     }
 }
