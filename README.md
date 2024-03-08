@@ -3,26 +3,18 @@ This application will take various inputs like energy consumption, transportatio
 
   **Main Features​**
 
--     Splash Page
-
--     Login/Create Account ​ ​
-
--     Home Page
-
--     About Page
-
--     Contact Page
-
--     Enter Transport Emission
-
--     Enter Electricity  Consumption
-
--     Calculate Carbon Footprint ​
-
--     View Data Report
+- Splash Page
+- Login/Create Account ​ ​
+- Home Page
+- About Page
+- Contact Page
+- Enter Transport Emission
+- Enter Electricity  Consumption
+- Calculate Carbon Footprint ​
+- View Data Report
 
 ### Technology Stack Used
-**Front-end**
+**Frontend**
 -    HTML
 -    CSS
 -    JavaScript
