@@ -1,4 +1,6 @@
 ### Carbon FootPrint Tracker App
+This application will take various inputs like energy consumption, transportation details, employee travel, material and waste etc., and calculate the carbon footprint. The application will also present this data in an easy-to-understandformat.
+
   **Main Features​**
 
 -     Splash Page
