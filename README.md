@@ -27,7 +27,7 @@ This application will take various inputs like energy consumption, transportatio
 -   ASP.NET Web Forms
 -   SQL Database
   
-### Screenshots of Main Use Interfaces(UI) 
+### Screenshots of Main User Interfaces(UI) 
 ### splash Page
 ![image](https://github.com/Teddydesta/EcoImpactAfrica/assets/86881100/744fc346-ddfa-4046-a0f3-2a5a08f4dfc6)
 ### Login Page
