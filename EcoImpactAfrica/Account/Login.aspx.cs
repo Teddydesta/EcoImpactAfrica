@@ -52,7 +52,7 @@ namespace EcoImpactAfrica.Account
                     case SignInStatus.Failure:
                     default:
                         FailureText.Text = "Invalid login attempt";
-                        ErrorMessage.Visible = true;
+                        //ErrorMessage.Visible = true;
                         break;
                 }
             }

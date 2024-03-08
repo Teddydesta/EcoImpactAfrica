@@ -6,11 +6,12 @@
     <style>
         body {
             margin: 0;
+             color: white;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         
         #splash-screen {
-            /*background-image: url('splash-bg.png');*/ /* Replace with your image path */
+            background-image: url('login_background.png');
             background-size: cover;
             background-position: center;
             height: 100vh;
@@ -28,8 +29,9 @@
         }
 
         #title {
-            font-size: 2rem;
+            font-size: 4rem;
             margin-top: 10px;
+            color: white;
         }
 
         #description {
@@ -51,9 +53,13 @@
 <body>
     <form id="form1" runat="server">
         <div id="splash-screen">
-            <img id="logo" src="back_img.png" alt="Your Logo" />
-            <h1 id="title">Welcome to Your Carbon Calculator</h1>
-            <p id="description">Explore your environmental impact and reduce your carbon footprint.</p>
+<%--            <img id="logo" src="splash-img.png" alt="Your Logo" />--%>
+            <h1 id="title"> <i>
+                <strong>Welcome to Your Carbon Calculator </strong>  </i>  </h1>
+            <p id="description" style=" color: black; font-size: 20px"> <i><strong>Explore your environmental 
+                impact and reduce your carbon footprint. </strong></i>
+
+            </p>
             <a id="cta-button" href="Account/Login.aspx">Get Started</a>
         </div>
     </form>

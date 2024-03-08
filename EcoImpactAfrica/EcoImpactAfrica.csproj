@@ -234,6 +234,7 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
     <Content Include="splash-bg.png" />
+    <Content Include="splash-img.png" />
     <Content Include="SplashScreen.aspx" />
     <Content Include="transport.png" />
     <Content Include="ViewSwitcher.ascx" />
