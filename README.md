@@ -50,4 +50,4 @@ This application will take various inputs like energy consumption, transportatio
 ![image](https://github.com/Teddydesta/EcoImpactAfrica/assets/86881100/02682bf1-f480-4b6f-aefa-cba0e567b2ea)
 ### Data Report Page
 ![image](https://github.com/Teddydesta/EcoImpactAfrica/assets/86881100/5222e999-c9c7-4bb8-be75-b51f5f72d43b)
-
+### Mobile Responsive
